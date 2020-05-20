@@ -55,6 +55,8 @@ class Calendar extends React.Component {
     const dateFormat = "d";
     const rows = [];
 
+    console.log(startDate)
+
     let days = [];
     let day = startDate;
     let formattedDate = "";
@@ -71,7 +73,8 @@ class Calendar extends React.Component {
                 : dateFns.isSameDay(day, selectedDate) ? "selected" : ""
             }`}
             key={day}
-            onClick={() => this.onDateClick(dateFns.parse(cloneDay))}
+            onClick={() => this.onDateClick(cloneDay)}
+
           >
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
