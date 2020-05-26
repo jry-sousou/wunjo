@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 class Popup extends Component {
     render() {
         return (
+            
             <div className='popup'>  
 <div className='popup\_inner'>  
 <h1>{this.props.text}</h1>  

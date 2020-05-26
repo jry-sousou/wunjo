@@ -3,6 +3,7 @@ import Calendar from "./components/Calendar";
 import './App.css';
 
 class App extends React.Component {
+    
   state = {
     currentMonth: new Date(),
     selectedDate: new Date()
@@ -21,7 +22,8 @@ renderHeader() {}
   prevMonth = () => {};
 
   render() {
-    return (
+    return ( 
+
       <div className="App">
         <header>
           <div id="logo">
@@ -35,6 +37,7 @@ renderHeader() {}
           <Calendar />
         </main>
       </div>
+  
     );
   }
 }
